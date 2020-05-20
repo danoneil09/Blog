@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+  <title>Blog Website</title>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header {
+      text-align: center;
+      background: url("https://i.imgur.com/E4yIQba.jpg");
+      background-size: cover;
+      color: white;
+      padding: 1px 0px 0px 0px;
+      
+    }
+    li {
+      display: inline;
+      padding: 0px 20px 0px 20px;
+
+    }
+    ul {
+    padding: 15px;
+    background: rgba(0,0,0,0.4);
+    }
+      
+    img {
+      margin: 0px 0px 40px 0px;
+      border-radius: 80px;
+      border: 7px solid black;
+    }
+    body {
+      max-width: 500px;
+      margin: 0 auto;
+      background: rgb(0,0,0,.8);
+      color: white;
+    }
+    a {
+      color: white;
+    }
+      h1 {
+        font-size: 50px;
+      }
+      article {
+        max-width:500px;
+        padding: 20px;
+        margin: 0 auto;
+      }
+    @media (max-width: 500px) {
+      body {
+        background: pink;
+        color: black;
+      }
+      h1 {
+        font-size: 36;
+        padding: 5px;
+      }
+      li {
+        display: block;
+        padding: 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ocean Lifeguarding</h1>
+    <img src="https://i.imgur.com/uAKs4ZG.jpg" width="200px">
+    <ul>
+      <li><a href="#">History</a></li>
+      <li><a href="#">The Rescue</a></li>
+      <li><a href="#">The Reward</a></li>
+    </ul>
+  </header>
+ <article>
+  <h2>What it's like making a rescue</h2>
+    <p>Adrenaline. Determinaiton. Adrenaline. Super  powers. Emotions. Trying hard now! Going hard now! Teamwork. Time stops. Adrenaline. Must run faster. Must swim faster! It's OK. You're going to be ok. Back to shore! I did good.</p>
+ <button>Like</button> 
+ </article>
+  <article>
+  <h2>What do lifeguards do on slow days when no one is at the beach?</h2>
+    <p>Cool. Today is going to be an easy day. Clean lifeguard tower. Windex and 409. Make sure to keep an eye on the water. Listen to the radio. Practice radio codes. Eat sunflower seeds. Go into the ocean for  a bathroom break. Watch out for supervisors. Make sure to not fall asleep. End of day. Pack it up. Go home.</p>
+<button>Like</button>
+</article>
+  
+  <article>
+  <h2>What are some of the most important things for an ocean lifeguard to keep in mind?</h2>
+    <p>Don't ever fall asleep in the tower. Know which lifeguards are working next to you. Stay in  shape and excercise everyday. Watch out for rookie lifeguards. They suck at lifeguarding. Expect the unexpected. Get ready to tons of stingray bites. The reason people get rescued is because they panic. Bring tons of food an water with you to work. Keep an eye on who goes into the water. Tell people about dangerous conditions before they go into the ocean. 4th of July is a shit show.</p>
+  <button>Like</button>
+  </article>
+  <script>
+  $("button").on("click", function() {alert("You like this post!") });
+</script>
+</body>
